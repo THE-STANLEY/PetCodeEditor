@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./main.css">
+  <link rel="stylesheet" href="./fonts/fonts.css">
+</head>
+<body>
+  <header class="header">
+    <h1 class="header__title">"STANLEY CODE EDITOR"</h1>
+    <p class="header__subtitle">PET-PROJECT FOR GITHUB COMMUNITY</p>
+  </header>
+  <div id="ide-parent">
+    <div id="button-wrapper">
+      <button onclick="switchPanel(0)">HTML</button>
+      <button onclick="switchPanel(1)">CSS</button>
+      <button onclick="switchPanel(2)">JavaScript</button>
+      <button onclick="runEdit(3)">Result</button>
+    </div>
+    <div id="ide-container">
+      <div class="panel-wrapper">
+        <div id="html">
+          &lt;!--Enter you HTML--&gt;
+        </div>
+      </div>
+      <div class="panel-wrapper">
+        <div id="css">
+          /* Enter you CSS */
+        </div>
+      </div>
+      <div class="panel-wrapper">
+        <div id="js">
+          // Enter you javascript
+        </div>
+      </div>
+      <div class="panel-wrapper">
+        <iframe id="result"></iframe>
+      </div>
+    </div>
+  </div>
+  <div class="description">
+  </div>
+  <div class="footer">
+    <div class="inner-wrap">
+      <p>&#169; <span></span> 2024 by STANLEY</p>
+      <div class="icons-wrap">
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.11/ace.js" type="text/javascript"
+    charset="utf-8"></script>
+  <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>
